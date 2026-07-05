@@ -1,0 +1,12 @@
+# Ignore local Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore the read-only Linux Foundation reference repo 
+# (We don't want to commit someone else's code to your project repository)
+a2a-samples-base/
+
+# Ignore local runtime databases/secrets
+my-agent-stack/database.db
+.env
