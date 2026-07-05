@@ -6,13 +6,27 @@ A production-ready proof-of-concept showing exactly how **MCP, AG-UI, A2A, and A
 
 ## See It Running
 
+### Run 1 — Full Protocol Stack (MCP + A2A + A2UI)
+
 Prompt: *"Give me a full inventory health report across all items."*
 
 ![Dashboard — full protocol stack in action](sample-runs/images/dashboard-run-1.png)
 
-Every event in that timeline is a real protocol message: MCP tool calls fetching live SQLite data, an A2A delegation spawning a specialist sub-agent, and an A2UI event injecting the Inventory Health Matrix widget dynamically into React — all visible, all structured, all yours to read.
+All four layers fire: MCP tool calls fetch live SQLite data, A2A delegation spawns the specialist analyst sub-agent, and the A2UI event injects the Inventory Health Matrix widget directly into React — live, no page reload.
 
-Full session recordings: [Run 1 (PDF)](sample-runs/AG-UI%20Protocol%20Dashboard_1.pdf) · [Run 2 (HTM)](sample-runs/AG-UI%20Protocol%20Dashboard_2.htm)
+[View full session (PDF)](sample-runs/AG-UI%20Protocol%20Dashboard_1.pdf)
+
+---
+
+### Run 2 — MCP Only (parallel tool calls)
+
+Prompt: *"What is the status of Order 002 and what is the inventory stock for laptop?"*
+
+![Dashboard — MCP-only parallel tool calls](sample-runs/images/dashboard-run-2.png)
+
+Two MCP tools called in parallel — `get_order_status` and `query_inventory_db` — results injected back into LLM context. No sub-agent needed; the runtime stays in the primary loop.
+
+[View full session (HTM)](sample-runs/AG-UI%20Protocol%20Dashboard_2.htm)
 
 ---
 
