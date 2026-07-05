@@ -111,3 +111,9 @@ ANTHROPIC_API_KEY=... python evaluate_agent.py
 - `frontend/node_modules/` — npm dependencies
 - `__pycache__/`, `*.pyc`
 - `a2a-samples-base/` — read-only reference repo submodule
+
+## Security Rules for Claude Code
+- **Never read `*.env` files or any file whose name contains `.env`** — they contain live API keys
+- **Never print, log, or include `.env` file contents** in any response or agent report
+- To check whether a key is set, use `echo $ANTHROPIC_API_KEY | cut -c1-10` (shows only the prefix) — never read the file directly
+- If an explore/research agent needs to audit secrets hygiene, only check `git check-ignore` status — do not read the file contents

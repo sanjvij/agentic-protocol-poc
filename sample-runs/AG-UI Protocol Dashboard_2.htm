@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en" class="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./AG-UI Protocol Dashboard_2_files/client"></script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG-UI Protocol Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="./AG-UI Protocol Dashboard_2_files/css2" rel="stylesheet">
+  <style type="text/css" data-vite-dev-id="/Users/sanj/Documents/Development/Containers/LocalDevContainer/agentic-protocol-poc/frontend/src/index.css">*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: JetBrains Mono, Fira Code, ui-monospace, monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.ml-0\.5 {
+  margin-left: 0.125rem;
+}
+.ml-1 {
+  margin-left: 0.25rem;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.h-1 {
+  height: 0.25rem;
+}
+.h-1\.5 {
+  height: 0.375rem;
+}
+.h-2 {
+  height: 0.5rem;
+}
+.h-3\.5 {
+  height: 0.875rem;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-full {
+  height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-1 {
+  width: 0.25rem;
+}
+.w-1\.5 {
+  width: 0.375rem;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-2 {
+  width: 0.5rem;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-3\.5 {
+  width: 0.875rem;
+}
+.w-px {
+  width: 1px;
+}
+.min-w-0 {
+  min-width: 0px;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1\.5 {
+  gap: 0.375rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.self-stretch {
+  align-self: stretch;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-amber-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 191 36 / var(--tw-border-opacity, 1));
+}
+.border-amber-500\/10 {
+  border-color: rgb(245 158 11 / 0.1);
+}
+.border-amber-500\/20 {
+  border-color: rgb(245 158 11 / 0.2);
+}
+.border-amber-500\/30 {
+  border-color: rgb(245 158 11 / 0.3);
+}
+.border-amber-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(180 83 9 / var(--tw-border-opacity, 1));
+}
+.border-amber-700\/40 {
+  border-color: rgb(180 83 9 / 0.4);
+}
+.border-amber-700\/50 {
+  border-color: rgb(180 83 9 / 0.5);
+}
+.border-blue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(96 165 250 / var(--tw-border-opacity, 1));
+}
+.border-blue-500\/10 {
+  border-color: rgb(59 130 246 / 0.1);
+}
+.border-blue-500\/20 {
+  border-color: rgb(59 130 246 / 0.2);
+}
+.border-blue-500\/25 {
+  border-color: rgb(59 130 246 / 0.25);
+}
+.border-blue-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity, 1));
+}
+.border-blue-700\/50 {
+  border-color: rgb(29 78 216 / 0.5);
+}
+.border-emerald-500\/10 {
+  border-color: rgb(16 185 129 / 0.1);
+}
+.border-emerald-500\/20 {
+  border-color: rgb(16 185 129 / 0.2);
+}
+.border-emerald-500\/30 {
+  border-color: rgb(16 185 129 / 0.3);
+}
+.border-emerald-700\/40 {
+  border-color: rgb(4 120 87 / 0.4);
+}
+.border-emerald-700\/50 {
+  border-color: rgb(4 120 87 / 0.5);
+}
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
+}
+.border-gray-700\/50 {
+  border-color: rgb(55 65 81 / 0.5);
+}
+.border-gray-700\/70 {
+  border-color: rgb(55 65 81 / 0.7);
+}
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
+}
+.border-gray-800\/80 {
+  border-color: rgb(31 41 55 / 0.8);
+}
+.border-rose-700\/40 {
+  border-color: rgb(190 18 60 / 0.4);
+}
+.border-slate-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity, 1));
+}
+.border-slate-700\/60 {
+  border-color: rgb(51 65 85 / 0.6);
+}
+.border-teal-500\/30 {
+  border-color: rgb(20 184 166 / 0.3);
+}
+.border-violet-500\/10 {
+  border-color: rgb(139 92 246 / 0.1);
+}
+.border-violet-500\/20 {
+  border-color: rgb(139 92 246 / 0.2);
+}
+.border-violet-500\/30 {
+  border-color: rgb(139 92 246 / 0.3);
+}
+.border-violet-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(109 40 217 / var(--tw-border-opacity, 1));
+}
+.border-violet-700\/40 {
+  border-color: rgb(109 40 217 / 0.4);
+}
+.border-violet-700\/50 {
+  border-color: rgb(109 40 217 / 0.5);
+}
+.border-violet-800\/20 {
+  border-color: rgb(91 33 182 / 0.2);
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+.border-t-transparent {
+  border-top-color: transparent;
+}
+.bg-amber-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity, 1));
+}
+.bg-amber-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 53 15 / var(--tw-bg-opacity, 1));
+}
+.bg-amber-900\/40 {
+  background-color: rgb(120 53 15 / 0.4);
+}
+.bg-amber-900\/50 {
+  background-color: rgb(120 53 15 / 0.5);
+}
+.bg-amber-900\/60 {
+  background-color: rgb(120 53 15 / 0.6);
+}
+.bg-amber-950\/20 {
+  background-color: rgb(69 26 3 / 0.2);
+}
+.bg-amber-950\/30 {
+  background-color: rgb(69 26 3 / 0.3);
+}
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-900\/60 {
+  background-color: rgb(30 58 138 / 0.6);
+}
+.bg-blue-950\/20 {
+  background-color: rgb(23 37 84 / 0.2);
+}
+.bg-blue-950\/30 {
+  background-color: rgb(23 37 84 / 0.3);
+}
+.bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
+}
+.bg-emerald-900\/40 {
+  background-color: rgb(6 78 59 / 0.4);
+}
+.bg-emerald-900\/50 {
+  background-color: rgb(6 78 59 / 0.5);
+}
+.bg-emerald-900\/60 {
+  background-color: rgb(6 78 59 / 0.6);
+}
+.bg-emerald-950\/15 {
+  background-color: rgb(2 44 34 / 0.15);
+}
+.bg-emerald-950\/25 {
+  background-color: rgb(2 44 34 / 0.25);
+}
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-800\/80 {
+  background-color: rgb(31 41 55 / 0.8);
+}
+.bg-gray-900\/40 {
+  background-color: rgb(17 24 39 / 0.4);
+}
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-950\/60 {
+  background-color: rgb(3 7 18 / 0.6);
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+.bg-rose-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity, 1));
+}
+.bg-rose-900\/50 {
+  background-color: rgb(136 19 55 / 0.5);
+}
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity, 1));
+}
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
+}
+.bg-slate-900\/60 {
+  background-color: rgb(15 23 42 / 0.6);
+}
+.bg-teal-950\/20 {
+  background-color: rgb(4 47 46 / 0.2);
+}
+.bg-violet-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity, 1));
+}
+.bg-violet-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity, 1));
+}
+.bg-violet-900\/40 {
+  background-color: rgb(76 29 149 / 0.4);
+}
+.bg-violet-900\/60 {
+  background-color: rgb(76 29 149 / 0.6);
+}
+.bg-violet-950\/15 {
+  background-color: rgb(46 16 101 / 0.15);
+}
+.bg-violet-950\/25 {
+  background-color: rgb(46 16 101 / 0.25);
+}
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.pt-1\.5 {
+  padding-top: 0.375rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.pt-3\.5 {
+  padding-top: 0.875rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.font-mono {
+  font-family: JetBrains Mono, Fira Code, ui-monospace, monospace;
+}
+.text-\[10px\] {
+  font-size: 10px;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.tabular-nums {
+  --tw-numeric-spacing: tabular-nums;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+.leading-relaxed {
+  line-height: 1.625;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+.text-amber-200 {
+  --tw-text-opacity: 1;
+  color: rgb(253 230 138 / var(--tw-text-opacity, 1));
+}
+.text-amber-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 211 77 / var(--tw-text-opacity, 1));
+}
+.text-amber-400\/50 {
+  color: rgb(251 191 36 / 0.5);
+}
+.text-amber-400\/60 {
+  color: rgb(251 191 36 / 0.6);
+}
+.text-amber-500 {
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity, 1));
+}
+.text-blue-100\/90 {
+  color: rgb(219 234 254 / 0.9);
+}
+.text-blue-300 {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity, 1));
+}
+.text-blue-400\/50 {
+  color: rgb(96 165 250 / 0.5);
+}
+.text-blue-400\/60 {
+  color: rgb(96 165 250 / 0.6);
+}
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+.text-emerald-200 {
+  --tw-text-opacity: 1;
+  color: rgb(167 243 208 / var(--tw-text-opacity, 1));
+}
+.text-emerald-300 {
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity, 1));
+}
+.text-emerald-400 {
+  --tw-text-opacity: 1;
+  color: rgb(52 211 153 / var(--tw-text-opacity, 1));
+}
+.text-emerald-400\/50 {
+  color: rgb(52 211 153 / 0.5);
+}
+.text-emerald-400\/60 {
+  color: rgb(52 211 153 / 0.6);
+}
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+.text-rose-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 164 175 / var(--tw-text-opacity, 1));
+}
+.text-sky-300 {
+  --tw-text-opacity: 1;
+  color: rgb(125 211 252 / var(--tw-text-opacity, 1));
+}
+.text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+.text-slate-400 {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+.text-teal-300 {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity, 1));
+}
+.text-teal-400 {
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity, 1));
+}
+.text-teal-400\/50 {
+  color: rgb(45 212 191 / 0.5);
+}
+.text-teal-500 {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity, 1));
+}
+.text-violet-300 {
+  --tw-text-opacity: 1;
+  color: rgb(196 181 253 / var(--tw-text-opacity, 1));
+}
+.text-violet-400\/50 {
+  color: rgb(167 139 250 / 0.5);
+}
+.text-violet-400\/60 {
+  color: rgb(167 139 250 / 0.6);
+}
+.text-violet-500 {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity, 1));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.placeholder-gray-600::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-placeholder-opacity, 1));
+}
+.placeholder-gray-600::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-placeholder-opacity, 1));
+}
+.opacity-60 {
+  opacity: 0.6;
+}
+.shadow-amber-900\/30 {
+  --tw-shadow-color: rgb(120 53 15 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-emerald-900\/30 {
+  --tw-shadow-color: rgb(6 78 59 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-rose-900\/30 {
+  --tw-shadow-color: rgb(136 19 55 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.duration-700 {
+  transition-duration: 700ms;
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.hover\:bg-blue-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+.focus\:border-blue-500\/60:focus {
+  border-color: rgb(59 130 246 / 0.6);
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.disabled\:cursor-not-allowed:disabled {
+  cursor: not-allowed;
+}
+.disabled\:opacity-40:disabled {
+  opacity: 0.4;
+}
+.disabled\:opacity-50:disabled {
+  opacity: 0.5;
+}
+</style></head>
+  <body class="bg-gray-950 text-gray-100 antialiased">
+    <div id="root"><div class="min-h-screen bg-gray-950 flex flex-col"><header class="border-b border-gray-800/80 px-6 py-4 flex items-center gap-3"><span class="text-xl text-gray-400">⬡</span><h1 class="text-white font-semibold tracking-tight text-sm">AG-UI Protocol Dashboard</h1><span class="text-gray-600 text-sm font-mono">/ procurement-agent</span><div class="ml-auto flex items-center gap-4 text-[10px] font-mono text-gray-500"><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>LLM Layer</span><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Agent Runtime</span><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-violet-500"></span>A2UI Widgets</span><span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>SSE · MCP · A2A</span></div></header><div class="border-b border-gray-800/80 px-6 py-3 bg-gray-900/40"><form class="flex gap-3"><input type="text" placeholder="Enter a procurement query…" class="flex-1 bg-gray-950 border border-gray-700/70 rounded-lg px-4 py-2.5 text-sm font-mono text-gray-200 placeholder-gray-600 focus:outline-none focus:border-blue-500/60 disabled:opacity-50" value="What is the status of Order 002 and what is the inventory stock for laptop"><button type="submit" class="px-5 py-2.5 rounded-lg text-sm font-medium transition-colors disabled:opacity-40 disabled:cursor-not-allowed bg-blue-600 hover:bg-blue-500 text-white">Run Agent</button></form></div><main class="flex-1 overflow-y-auto px-6 py-6"><div class="max-w-3xl mx-auto space-y-2"><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-slate-500 opacity-60">INIT</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border border-slate-700/60 bg-slate-900/60 px-5 py-4"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="w-2 h-2 rounded-full bg-slate-400 animate-pulse"></span><span class="text-slate-300 text-xs font-mono font-semibold tracking-widest uppercase">Session Initialised</span><span class="ml-auto text-[10px] px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 font-mono border border-slate-700">anthropic · claude-sonnet-4-6</span></div><p class="text-white text-sm font-mono mb-3 leading-relaxed">What is the status of Order 002 and what is the inventory stock for laptop</p><div class="flex gap-2 flex-wrap items-center"><span class="text-[10px] text-slate-500 font-mono uppercase tracking-wider">tools registered:</span><span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono border border-slate-700">get_order_status</span><span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono border border-slate-700">query_inventory_db</span><span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-sky-300 font-mono border border-slate-700">delegate_to_analyst</span></div></div></div></div><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-blue-500 opacity-60">LLM</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border border-blue-500/25 bg-blue-950/20 overflow-hidden"><div class="flex items-center gap-2 px-4 py-2 border-b border-blue-500/20 bg-blue-950/30"><span class="inline-flex items-center gap-1.5 text-[10px] font-mono font-semibold tracking-widest uppercase px-2 py-0.5 rounded border bg-blue-900/60    text-blue-300    border-blue-700/50">🧠 LLM · Cognitive Model Layer</span><span class="ml-auto text-[10px] font-mono text-blue-400/60">TOKEN_STREAM</span></div><div class="px-4 py-3 font-mono text-sm text-blue-100/90 leading-relaxed whitespace-pre-wrap">Sure! Let me check both of those simultaneously for you right now!</div><div class="px-4 py-1.5 border-t border-blue-500/10 flex items-center gap-1.5"><span class="w-1 h-1 rounded-full bg-blue-500 animate-pulse"></span><span class="text-[10px] font-mono text-blue-400/50">Generating natural language · reasoning over tool results</span></div></div></div></div><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-amber-500 opacity-60">RUNTIME</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border overflow-hidden transition-colors duration-500 border-emerald-500/30 bg-emerald-950/15"><div class="flex items-center gap-2 px-4 py-2 border-b border-emerald-500/20 bg-emerald-950/25"><span class="inline-flex items-center gap-1.5 text-[10px] font-mono font-semibold tracking-widest uppercase px-2 py-0.5 rounded border bg-emerald-900/60 text-emerald-300 border-emerald-700/50">⚙️ Agent Runtime · Execution Layer</span><span class="ml-auto text-[10px] font-mono text-emerald-400/60">TOOL_COMPLETE</span></div><div class="px-4 py-3 space-y-3"><div class="flex items-start gap-3"><div class="mt-0.5"><span class="text-emerald-400 text-sm">✓</span></div><div class="flex-1 min-w-0"><p class="text-xs font-mono text-gray-400 mb-1">MCP server responded → result returned to LLM context</p><div class="flex items-center gap-2 flex-wrap"><span class="text-sm font-mono font-semibold text-emerald-200">get_order_status</span><span class="text-[10px] px-2 py-0.5 rounded border font-mono bg-emerald-900/40 border-emerald-700/40 text-emerald-300">MCP TOOL</span></div></div></div><div class="rounded-lg border border-gray-700/50 bg-gray-950/60 px-3 py-2.5 font-mono text-xs space-y-1.5"><div class="flex items-center gap-2 text-gray-500 mb-2"><span class="w-1.5 h-1.5 rounded-full bg-gray-600"></span><span class="uppercase tracking-wider text-[10px]">MCP Data Server Subprocess · SQLite</span></div><div><span class="text-gray-500">fn   → </span><span class="text-sky-300">get_order_status()</span></div><div><span class="text-gray-500">args → </span><span class="text-violet-300">{"order_id":"ORD-002"}</span></div><div class="pt-1.5 mt-1 border-t border-gray-700/50"><span class="text-gray-500">res  → </span><span class="text-emerald-300">Order ORD-002 | Item: Keyboard | Status: DELAYED | Qty: 200</span></div></div></div><div class="px-4 py-1.5 border-t flex items-center gap-1.5 border-emerald-500/10"><span class="w-1 h-1 rounded-full bg-emerald-500"></span><span class="text-[10px] font-mono text-emerald-400/50">Control returns to LLM · tool result injected into context</span></div></div></div></div><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-amber-500 opacity-60">RUNTIME</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border overflow-hidden transition-colors duration-500 border-emerald-500/30 bg-emerald-950/15"><div class="flex items-center gap-2 px-4 py-2 border-b border-emerald-500/20 bg-emerald-950/25"><span class="inline-flex items-center gap-1.5 text-[10px] font-mono font-semibold tracking-widest uppercase px-2 py-0.5 rounded border bg-emerald-900/60 text-emerald-300 border-emerald-700/50">⚙️ Agent Runtime · Execution Layer</span><span class="ml-auto text-[10px] font-mono text-emerald-400/60">TOOL_COMPLETE</span></div><div class="px-4 py-3 space-y-3"><div class="flex items-start gap-3"><div class="mt-0.5"><span class="text-emerald-400 text-sm">✓</span></div><div class="flex-1 min-w-0"><p class="text-xs font-mono text-gray-400 mb-1">MCP server responded → result returned to LLM context</p><div class="flex items-center gap-2 flex-wrap"><span class="text-sm font-mono font-semibold text-emerald-200">query_inventory_db</span><span class="text-[10px] px-2 py-0.5 rounded border font-mono bg-emerald-900/40 border-emerald-700/40 text-emerald-300">MCP TOOL</span></div></div></div><div class="rounded-lg border border-gray-700/50 bg-gray-950/60 px-3 py-2.5 font-mono text-xs space-y-1.5"><div class="flex items-center gap-2 text-gray-500 mb-2"><span class="w-1.5 h-1.5 rounded-full bg-gray-600"></span><span class="uppercase tracking-wider text-[10px]">MCP Data Server Subprocess · SQLite</span></div><div><span class="text-gray-500">fn   → </span><span class="text-sky-300">query_inventory_db()</span></div><div><span class="text-gray-500">args → </span><span class="text-violet-300">{"item_name":"laptop"}</span></div><div class="pt-1.5 mt-1 border-t border-gray-700/50"><span class="text-gray-500">res  → </span><span class="text-emerald-300">Laptop: 50 units in stock. REORDER REQUIRED (threshold: 100 units).</span></div></div></div><div class="px-4 py-1.5 border-t flex items-center gap-1.5 border-emerald-500/10"><span class="w-1 h-1 rounded-full bg-emerald-500"></span><span class="text-[10px] font-mono text-emerald-400/50">Control returns to LLM · tool result injected into context</span></div></div></div></div><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-blue-500 opacity-60">LLM</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border border-blue-500/25 bg-blue-950/20 overflow-hidden"><div class="flex items-center gap-2 px-4 py-2 border-b border-blue-500/20 bg-blue-950/30"><span class="inline-flex items-center gap-1.5 text-[10px] font-mono font-semibold tracking-widest uppercase px-2 py-0.5 rounded border bg-blue-900/60    text-blue-300    border-blue-700/50">🧠 LLM · Cognitive Model Layer</span><span class="ml-auto text-[10px] font-mono text-blue-400/60">TOKEN_STREAM</span></div><div class="px-4 py-3 font-mono text-sm text-blue-100/90 leading-relaxed whitespace-pre-wrap">Here's a summary of both results:
+
+---
+
+### 📦 Order Status — ORD-002
+| Field | Details |
+|-------|---------|
+| **Order ID** | ORD-002 |
+| **Item** | Keyboard |
+| **Status** | ⚠️ DELAYED |
+| **Quantity** | 200 units |
+
+&gt; **Note:** Order ORD-002 is currently **delayed**. You may want to follow up with your supplier to get an updated delivery timeline.
+
+---
+
+### 🖥️ Inventory Stock — Laptop
+| Field | Details |
+|-------|---------|
+| **Item** | Laptop |
+| **Stock** | 50 units |
+| **Reorder Required** | 🔴 YES (Threshold: 100 units) |
+
+&gt; **Note:** Laptop stock is critically low at **50 units**, which is below the reorder threshold of 100 units. **Immediate reordering is recommended** to avoid stockouts.
+
+---
+
+Let me know if you'd like to take any further action on either of these!</div><div class="px-4 py-1.5 border-t border-blue-500/10 flex items-center gap-1.5"><span class="w-1 h-1 rounded-full bg-blue-500 animate-pulse"></span><span class="text-[10px] font-mono text-blue-400/50">Generating natural language · reasoning over tool results</span></div></div></div></div><div class="flex gap-3 items-start"><div class="w-16 shrink-0 pt-3.5 text-right text-[10px] font-mono font-semibold tracking-wider text-teal-500 opacity-60">DONE</div><div class="w-px self-stretch bg-gray-800 shrink-0"></div><div class="flex-1 py-1.5"><div class="rounded-xl border border-teal-500/30 bg-teal-950/20 px-5 py-3 flex items-center gap-3"><span class="text-teal-400">⬡</span><div><p class="text-teal-300 text-xs font-mono font-semibold tracking-widest uppercase">Run Complete</p><p class="text-teal-400/50 text-[10px] font-mono mt-0.5">Agent loop exited · no further tool calls requested by LLM</p></div></div></div></div><div></div></div></main></div></div>
+    <script type="module" src="./AG-UI Protocol Dashboard_2_files/main.jsx"></script>
+  
+
+<div class="glasp-ui-wrapper" id="glasp-ui-wrapper" style="height: 0px; width: 0px; padding: 0px;"><iframe name="glasp-tooltip-iframe" id="glasp-tooltip-iframe" style="display: none;" src="./AG-UI Protocol Dashboard_2_files/saved_resource.html"></iframe><iframe name="glasp-sidebar-iframe" id="glasp-sidebar-iframe" style="display: none !important;width: 0px !important; min-width: 0px !important; max-width: 320px; height: 100%; background: transparent; margin: auto; position: fixed; top: 0px; right: 0px; left: auto; z-index: 9000000000000000000;border: none !important;" src="./AG-UI Protocol Dashboard_2_files/saved_resource(1).html"></iframe></div><div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none; margin: auto; width: fit-content; padding: 0px; border-radius: 100%;">
+        <div id="yt_article_summary_widget" class="yt_article_summary_widget"><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.40123 27.3686C-0.44103 25.5284 -0.441033 22.5449 1.4012 20.7047L16.5971 5.52573L24.0098 12.9301L5.47818 31.4409L1.40123 27.3686Z" fill="#FF4E74"></path>
+        <path d="M35.1286 24.0367L16.5972 5.5258L20.6741 1.45341C22.5164 -0.386772 25.5033 -0.386775 27.3455 1.45341L42.5415 16.6323L35.1286 24.0367Z" fill="#FFF85E"></path>
+        <path d="M24.0099 35.143L42.5416 16.6323L46.6183 20.7046C48.4606 22.5448 48.4606 25.5284 46.6183 27.3686L31.4224 42.5476L24.0099 35.143Z" fill="#76FF54"></path>
+        <path d="M27.3454 46.6198C25.5032 48.4601 22.5163 48.4601 20.674 46.6198L5.47815 31.4409L12.8908 24.0366L31.4223 42.5476L27.3454 46.6198Z" fill="#5C94FF"></path>
+    </svg></div>
+        <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+    </div><div id="glasp-extension-toast-container" style="position: fixed; top: 32px; right: 16px; z-index: 2147483647; display: none; flex-direction: column; align-items: flex-end; height: 0px; width: auto; margin: 0px; padding: 0px;"></div></body></html>

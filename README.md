@@ -170,6 +170,20 @@ When the React dashboard receives `WIDGET_RENDER`, it dynamically mounts an **In
 
 ---
 
+## Sample Runs
+
+### Full Inventory Health Report (MCP + A2A + A2UI)
+
+Prompt: *"Give me a full inventory health report across all items."*
+
+![Dashboard sample run — full protocol stack in action](sample-runs/images/dashboard-run-1.png)
+
+All four protocol layers fire in sequence: MCP tool calls fetch live data, the A2A delegation spawns the analyst sub-agent, and the A2UI event injects the Inventory Health Matrix widget directly into the React timeline.
+
+Full session recordings: [Run 1 (PDF)](sample-runs/AG-UI%20Protocol%20Dashboard_1.pdf) · [Run 2 (HTM)](sample-runs/AG-UI%20Protocol%20Dashboard_2.htm)
+
+---
+
 ## What is NOT used
 
 - LangChain / LangGraph
